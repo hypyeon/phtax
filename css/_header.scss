@@ -1,0 +1,184 @@
+header {
+    z-index: 5;
+    position: fixed;
+
+    width: 100vw;
+    height: 12vh;
+    padding: 0 6rem;
+    display: flex;
+    align-items: center;
+    background-color: white;
+
+    .header {
+        width: 100%;
+    }
+
+    .logo {
+        img {
+            width: 17.5vw;
+        }
+    }
+
+    nav {
+        font-family: $ibm;
+        font-size: 1.25rem;
+        letter-spacing: 3.25px;
+        line-height: 1.25rem;
+        padding: 1px;
+        background-color: white;
+
+        a {
+            display: inline-block;
+            padding: 0 1.5rem;
+            .hover {
+                font-family: $raleway;
+                letter-spacing: 1.15px;
+            }
+            //hover effects
+            position: relative;
+            overflow: hidden;
+        }
+        a::before {
+            content: attr(data-hover);
+            position: absolute;
+            left: 0;
+            width: 100%;
+            opacity: 0;
+            transform: translate(0, -25%);
+            transition: all .5s ease-in-out;
+        }
+        a:hover::before {
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+        
+        a {
+            .hover {
+                transition: all .5s ease-in-out;
+            }
+        }
+        
+        a:hover {
+            .hover {
+                opacity: 0;
+                transform: translate(0, 50%);
+            }
+        }
+        
+    }
+
+    #slideUpBtn {
+        img {
+            width: 4.5rem;
+        }
+        position: fixed;
+        bottom: 2rem;
+        right: 3rem;
+        opacity: 0;
+        pointer-events: none;
+        transition: .3s ease-out;
+
+        filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.6));
+    }
+    #slideUpBtn.active {
+        opacity: 1;
+        pointer-events: auto;
+    }
+    #slideUpBtn:hover {
+        filter: drop-shadow(0 1px 3px rgb(126, 95, 0));
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+}
+@media only screen and (max-width: 912px) {
+    header {
+        padding: 0 1rem;
+        .header {
+            flex-direction: column;
+        }    
+        .logo {
+            padding-bottom: 1rem;
+            img {
+                width: 32vw;
+            }
+        }
+        nav {
+            letter-spacing: 2.75px;
+            a {
+                font-size: 1.25rem;
+                padding: 0 2.75rem;
+            }            
+        }
+        #slideUpBtn {
+            img {
+                width: 3.75rem;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    header {
+        .logo {
+            padding-bottom: 0;
+        }
+    }
+}
+@media only screen and (max-width: 540px) {
+    header {
+        height: 14vh;
+        .logo {
+            padding-bottom: 0;
+            img {
+                width: 28vw;
+            }
+        }
+        nav {
+            a {
+                font-size: .85rem;
+                padding: 0 .95rem;
+            }            
+        }
+        #slideUpBtn {
+            img {
+                width: 3rem;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 414px) {
+    header {
+        padding: 1.5rem .75rem 1rem .75rem;
+        .logo {
+            img {
+                width: 44vw;
+            }
+        }
+        nav {
+            a {
+                font-size: .65rem;
+                padding: 0 .75rem;
+                letter-spacing: .35px;
+            }            
+        }
+        #slideUpBtn {
+            img {
+                width: 3rem;
+            }
+            bottom: 2rem;
+            right: 1.25rem;    
+        }
+    }
+}
+@media only screen and (max-width: 375px) {
+    header {
+        #slideUpBtn {
+            img {
+                width: 3rem;
+            }
+            bottom: 2rem;
+            right: 1.25rem;    
+        }
+    }
+}

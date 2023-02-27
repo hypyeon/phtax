@@ -1,0 +1,483 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+body {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-size: 1rem;
+}
+
+a, a:hover, a:visited, a:active {
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.homesection {
+  padding-top: calc(55.5px + 2.75rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.a-i-c {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.a-s-c {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.j-c-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.j-c-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.relative {
+  position: relative;
+}
+
+.secClr {
+  color: #007DB3;
+  font-weight: 500;
+}
+
+.sFont {
+  font-size: 0.75rem;
+}
+
+header {
+  z-index: 5;
+  padding: 1.5rem 7.5rem 1.25rem 7.5rem;
+  width: 100vw;
+  position: fixed;
+  background-color: white;
+}
+
+header .logo img {
+  width: 17.5vw;
+}
+
+header nav {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 3.25px;
+  line-height: 1.25rem;
+  padding: 1px;
+  background-color: white;
+}
+
+header nav a {
+  display: inline-block;
+  padding: 0 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+header nav a .hover {
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 1.15px;
+}
+
+header nav a::before {
+  content: attr(data-hover);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  -webkit-transform: translate(0, -25%);
+          transform: translate(0, -25%);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+header nav a:hover::before {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+header nav a .hover {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+header nav a:hover .hover {
+  opacity: 0;
+  -webkit-transform: translate(0, 50%);
+          transform: translate(0, 50%);
+}
+
+header #slideUpBtn {
+  position: fixed;
+  bottom: 2rem;
+  right: 3rem;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: .5s ease-out;
+  transition: .5s ease-out;
+}
+
+header #slideUpBtn img {
+  width: 4.5rem;
+  -webkit-filter: drop-shadow(0 5px 2px rgba(15, 76, 102, 0.75));
+          filter: drop-shadow(0 5px 2px rgba(15, 76, 102, 0.75));
+}
+
+header #slideUpBtn.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+main {
+  background-color: rgba(0, 114, 163, 0.075);
+}
+
+main .home-1 .home-1-1 {
+  position: relative;
+}
+
+main .home-1 .home-1-1 img {
+  display: block;
+  margin: 0 auto;
+  width: 75vw;
+  height: 16rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.85;
+}
+
+main .home-1 .home-1-1 p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: "Raleway", sans-serif;
+}
+
+main .home-1 .home-1-1 p span {
+  font-size: 1.65rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+main .home-1 .home-1-2 {
+  padding: 3rem 0;
+}
+
+main .home-1 .home-1-2 #intro {
+  padding-left: calc(12.5vw + 6rem);
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+
+main .home-1 .home-1-2 #intro h3 {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  font-size: 1.5rem;
+  padding-bottom: 0.25rem;
+  background-image: linear-gradient(15deg, #0F4C66, #b0f4ff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+main .home-1 .home-1-2 #intro p {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-color: #fff;
+          text-decoration-color: #fff;
+  text-decoration-thickness: 3px;
+}
+
+main .home-1 .home-1-2 #table {
+  padding-right: calc(12.5vw + 8rem);
+  grid-gap: 1.5rem;
+}
+
+main .home-1 .home-1-2 #table a {
+  padding: 0.85rem 3.5rem;
+  font-weight: 400;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  color: #0F4C66;
+  border-radius: 2rem;
+  background-color: #fff;
+  -webkit-filter: drop-shadow(2px 2px 3px gray);
+          filter: drop-shadow(2px 2px 3px gray);
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+}
+
+main .home-1 .home-1-2 #table a:hover {
+  background-color: #0F4C66;
+  color: white;
+}
+
+main .home-2 {
+  padding-left: 12.5vw;
+  padding-right: 12.5vw;
+}
+
+main .home-2 .home-2-1 img {
+  width: 16.5vw;
+  height: 14vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+  opacity: 0.9;
+}
+
+main .home-2 .home-2-1 p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 1.25rem;
+  color: white;
+  letter-spacing: 5px;
+  background-color: rgba(92, 92, 92, 0.5);
+  padding: 0.15rem;
+  width: 100%;
+  text-align: center;
+}
+
+main .home-2 .home-2-2 {
+  padding: 1.5rem 0 4.5rem 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .home-2 .home-2-2 div {
+  padding: 0.35rem;
+}
+
+main .home-2 .home-2-2 div p {
+  padding: 0.75rem 1.15rem;
+  border-radius: 1.75rem;
+  border: 2px solid #0F4C66;
+  color: #0F4C66;
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+main .home-2 .home-2-3 {
+  text-align: center;
+  padding: 1.75rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0 0 1rem 1rem;
+}
+
+main .home-2 .home-2-3 #ad {
+  padding-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 2rem;
+}
+
+main .home-2 .home-2-3 #ad span {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #007DB3;
+  letter-spacing: 0.75px;
+}
+
+main .home-2 .home-2-3 a {
+  padding: 0.65rem 3.25rem;
+  color: white;
+  font-size: 1.25rem;
+  letter-spacing: 1.25px;
+  border-radius: 1rem;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #0F4C66), color-stop(80%, #007DB3), to(#0F4C66));
+  background-image: linear-gradient(0deg, #0F4C66 10%, #007DB3 80%, #0F4C66);
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+main .home-2 .home-2-3 a img {
+  width: 1.75rem;
+  padding-right: 0.15rem;
+}
+
+main .home-2 .home-2-3 a img, main .home-2 .home-2-3 a p {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+main .home-2 .home-2-3 a:hover {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #007DB3), color-stop(80%, #0F4C66), to(#007DB3));
+  background-image: linear-gradient(0deg, #007DB3 10%, #0F4C66 80%, #007DB3);
+}
+
+main .home-2 .home-2-3 #note {
+  padding-top: 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  color: #7c6d51;
+  letter-spacing: 0.5px;
+  font-size: 0.75rem;
+  text-align: left;
+}
+
+main .home-3 {
+  text-align: center;
+  position: relative;
+}
+
+main .home-3 .home-3-1 {
+  padding-bottom: 2.5rem;
+}
+
+main .home-3 .home-3-1 .home-3-1-1 {
+  padding-right: 4rem;
+}
+
+main .home-3 .home-3-1 .home-3-1-1 img {
+  width: 23.5vw;
+  border: 0.75rem solid white;
+  border-radius: 0.75rem;
+}
+
+main .home-3 .home-3-1 .home-3-1-2 #address {
+  font-size: 1.25rem;
+  letter-spacing: 0.75px;
+}
+
+main .home-3 .home-3-1 .home-3-1-2 a img {
+  margin: 1rem 0;
+  width: 2.5rem;
+}
+
+main .home-3 .home-3-1 .home-3-1-2 #contact {
+  text-align: left;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  font-size: 1.1rem;
+}
+
+main .home-3 .home-3-2 {
+  padding-bottom: 62.5px;
+}
+
+main .home-3 .home-3-2 p {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  font-size: 1rem;
+  line-height: 2rem;
+  padding: 1.5rem 3rem;
+  background-color: #f7fdef;
+}
+
+main .home-3 .home-3-2 p a {
+  font-size: 1.15rem;
+  font-weight: 500;
+  background-image: linear-gradient(15deg, #8e5a00, #00a8c2);
+  -webkit-background-clip: text;
+  color: transparent;
+  padding: 0 0.25rem;
+  letter-spacing: 0.5px;
+}
+
+main .home-3 .footer {
+  position: absolute;
+  bottom: 0;
+  padding: 0.5rem;
+  background-color: white;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+main .home-3 .footer p {
+  padding: 0.25rem;
+}
+
+main .home-3 .footer p a {
+  font-size: 0.75rem;
+}
+
+main .home-3 .footer p #hp {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background-image: linear-gradient(15deg, #ff58d5, #41e6ff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+/*# sourceMappingURL=style.css.map */

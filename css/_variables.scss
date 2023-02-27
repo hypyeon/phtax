@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600&display=swap');
+
+$raleway: 'Raleway', sans-serif;
+$ibm: 'IBM Plex Sans KR', sans-serif;
+
+$primaryColor: #0F4C66;
+$secondaryColor: #007DB3; 
+$gradientOne: linear-gradient(120deg, #0F4C66, #007DB3);
+$gradientOneFaded: linear-gradient(45deg, hsla(0, 0%, 55%, 0.8), hsla(191, 100%, 26%, 0.8));
+$gradientBtn: linear-gradient(0deg, $primaryColor 10%, $secondaryColor 80%, $primaryColor);
+
+@mixin centerContent {
+    display: block;
+    margin: 0 auto;
+}
+
+@mixin textOnPics {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin fontGrad {
+    background-image: linear-gradient(15deg, rgb(142, 90, 0), rgb(0, 168, 194));
+    -webkit-background-clip: text;
+    color: transparent;
+    padding: 0 0.25rem;
+}
+
+@mixin fontGrad-2 {
+    background-image: linear-gradient(45deg, $primaryColor, rgb(0, 175, 190));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@mixin fontGrad-3 {
+    background-image: linear-gradient(15deg, rgb(255, 88, 213), rgb(65, 230, 255));
+    -webkit-background-clip: text;
+    color: transparent;
+}

@@ -1,0 +1,124 @@
+@import './variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+body {
+    font-family: $ibm;
+    font-size: 1rem;
+}
+
+main {
+    background-color: hsla(198, 100%, 32%, 0.075);
+}
+
+a, a:hover, a:visited, a:active {
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.section-1 {
+    padding-top: 12vh; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: center; 
+}
+
+.section-2 {
+    padding-top: 12vh; 
+    padding-left: 11vw;
+    padding-right: 11vw;
+    height: 100vh;
+    align-items: center;
+
+    scroll-snap-align: center; 
+}
+
+.section-3 {
+    padding-top: 12vh; 
+    padding-left: 11vw;
+    padding-right: 11vw;
+    text-align: center;
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .raleway {
+        font-family: $raleway;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.a-i-c {
+    height: fit-content;
+    align-items: center;
+}
+
+.a-s-c {
+    align-self: center;
+}
+
+.j-c-sb {
+    justify-content: space-between;
+}
+
+.j-c-c {
+    justify-content: center;
+}
+
+.j-c-sa {
+    justify-content: space-around;
+}
+
+.grid {
+    display: grid;
+}
+
+.relative {
+    position: relative;
+}
+
+.raleway {
+    font-family: $raleway;
+}
+
+.secClr {
+    color: $secondaryColor;
+    font-weight: 500;
+}
+
+.sFont {
+    font-size: 0.75rem;
+}
+
+.textOnPic {
+    @include textOnPics; 
+    text-align: center;
+}

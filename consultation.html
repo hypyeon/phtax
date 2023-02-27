@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style-consultation.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/accountant-logo.png">
+
+    <title>편도선세무회계사무소</title>
+</head>
+<body id="home">
+    <header>
+        <div class="flex a-i-c j-c-sb header">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./images/LOGO.png" alt="편도선세무회계" id="logo">
+                </a>
+            </div>
+            <nav>
+                <a href="./index.html" data-hover="회사소개">
+                    <div class="hover">COMPANY</div>
+                </a>
+                <a href="./accountant.html" data-hover="세무사소개">
+                    <div class="hover">ACCOUNTANT</div> 
+                </a>
+                <a href="./consultation.html" data-hover="상담신청">
+                    <div class="hover">CONSULTATION</div>
+                </a>
+            </nav>    
+        </div>
+        <a href="#home" id="slideUpBtn">
+            <img src="./images/slideupbtn.png" alt="Slide Up">
+        </a>
+    </header>
+    <main class="section-3">
+        <div class="cnslt-1 relative"
+        data-aos="fade-down"
+        data-aos-delay="400"
+        data-aos-duration="1200"
+        data-aos-once="true"
+        data-aos-mobile="false">
+            <img src="./images/customerservice.jpg" alt="Customer Service">
+            <div class="textOnPic">
+                <p class="raleway">CONSULTATION</p>
+                <p id="inst-1"> 
+                    아래 양식을 통해 상담내용을 간단히 작성해 주시면 <br>
+                    꼼꼼한 검토 후 빠른 시일 내에 연락드리겠습니다. 
+                </p>
+            </div>
+        </div>
+        <div class="cnslt-2 flex">
+            <div class="cnt flex"
+            data-aos="fade-right"
+            data-aos-delay="800"
+            data-aos-duration="1200"
+            data-aos-once="true"
+            data-aos-mobile="false">
+                <div class="cntinfo">
+                    <p class="raleway">CONSULTATION HOURS</p>
+                    <p class="cntinfo-1">월 - 금 <br id="break-4">
+                    09:30AM - 05:00PM</p>    
+                </div>
+                <div class="cntinfo">
+                    <p class="raleway">EMAIL</p>
+                    <p class="cntinfo-1">sayatax@naver.com</p>    
+                </div>    
+            </div>
+            <div class="requestForm flex-col j-c-c a-i-c"
+            data-aos="fade-left"
+            data-aos-delay="1000"
+            data-aos-duration="1200"
+            data-aos-once="false">
+                <h2>상담신청서 작성</h2>
+                <form action="https://formsubmit.co/sayatax@naver.com" method="POST" class="flex-col">
+                    <div class="form-1">
+                        <label for="type">카테고리 선택 : </label>
+                        <select name="유형">
+                            <option>법인</option>
+                            <option>개인</option>
+                            <option>개인사업자</option>
+                        </select>
+                        <select name="분야">
+                            <option>소득세</option>
+                            <option>법인세</option>
+                            <option>상속/증여세</option>
+                            <option>양도소득세</option>
+                            <option>기타 문의</option>
+                        </select>    
+                    </div>
+                    <div class="form-2 grid j-c-c a-i-c">
+                        <div class="i-1">
+                            <label for="이름">성함 <span>*</span></label>
+                            <input type="text" name="이름" required>    
+                        </div>
+                        <div class="i-2">
+                            <label for="연락처">연락처 <span>*</span></label>
+                            <input type="tel" name="연락처" required>        
+                        </div>
+                        <div class="i-3">
+                            <label for="이메일">이메일 주소</label>
+                            <input type="email" name="이메일">    
+                        </div>
+                    </div>             
+                    <textarea class="form" name="문의내용" placeholder="상담 문의 내용을 작성 해 주세요." required></textarea>
+                    <button type="submit">상담신청 하기</button>
+                </form>
+                <p>* 상담 진행 시 수수료 발생할 수 있습니다.</p>
+            </div>
+    
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+</body>
+</html>
