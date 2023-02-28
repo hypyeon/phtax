@@ -349,15 +349,15 @@ header #slideUpBtn:hover {
   position: relative;
 }
 
-.home-1 .home-1-1 img, .home-1 .home-1-1 source {
+.home-1 .home-1-1 source, .home-1 .home-1-1 img {
   display: block;
   margin: 0 auto;
   width: 78vw;
   height: 34vh;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-filter: brightness(70%);
-          filter: brightness(70%);
+  -webkit-filter: brightness(65%);
+          filter: brightness(65%);
 }
 
 .home-1 .home-1-1 .textOnPic {

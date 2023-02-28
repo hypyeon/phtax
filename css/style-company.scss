@@ -5,12 +5,12 @@
 .home-1 {
     .home-1-1 {
         position: relative;
-        img, source {
+        source, img {
             @include centerContent;
             width: 78vw;
             height: 34vh;
             object-fit: cover;
-            filter: brightness(70%)
+            filter: brightness(65%)
         }
         .textOnPic {
             font-size: 1.5rem;
