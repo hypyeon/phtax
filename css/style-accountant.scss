@@ -9,7 +9,7 @@
         width: fit-content;
         height: fit-content;
 
-        img {
+        img, source {
             width: 20vw;
             height: 74vh;
             object-fit: cover;
@@ -201,7 +201,7 @@
     .accnt-1 {
         .accnt-1-1 {
             padding-bottom: 0;
-            img {
+            img, source {
                 width: 20vw;
                 height: 76vh;
             }
@@ -272,7 +272,7 @@
         flex-direction: column;
         justify-content: center;
         .accnt-1-1 {
-            img {
+            img, source {
                 width: 78vw;
                 height: 16vh;
             }
@@ -333,7 +333,7 @@
 @media only screen and (max-width: 768px) {
     .accnt-1 {
         .accnt-1-1 {
-            img {
+            img, source {
                 height: 12vh;
             }
         }
@@ -376,7 +376,7 @@
     .accnt-1 {
         .accnt-1-1 {
             padding-bottom: .5rem;
-            img {
+            img, source {
                 height: 12vh;
             }
         }
@@ -435,7 +435,7 @@
     .accnt-1 {
         .accnt-1-1 {
             padding-bottom: .5rem;
-            img {
+            img, source {
                 height: 14vh;
             }
         }
@@ -515,7 +515,7 @@
     .accnt-1 {
         .accnt-1-1 {
             padding-bottom: .25rem;
-            img {
+            img, source {
                 height: 12vh;
             }
         }

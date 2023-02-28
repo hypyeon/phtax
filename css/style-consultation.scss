@@ -4,7 +4,7 @@
 
 .cnslt-1 {
     width: 78vw;
-    img {
+    img, source {
         width: 100%;
         height: 25vh;
         object-fit: cover;
@@ -142,7 +142,7 @@
 @media only screen and (max-width: 1024px) {
     .cnslt-1 {
         padding-bottom: 0;
-        img {
+        img, source {
             height: 20vh;
         }
         .textOnPic {
@@ -210,7 +210,7 @@
 }
 @media only screen and (max-width: 912px) {
     .cnslt-1 {
-        img {
+        img, source {
             height: 18vh;
         }
     }
@@ -242,7 +242,7 @@
 }
 @media only screen and (max-width: 540px) {
     .cnslt-1 {
-        img {
+        img, source {
             height: 10vh;
         }
         .textOnPic {
